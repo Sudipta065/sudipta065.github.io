@@ -49,6 +49,7 @@ body {
   color: #40bad5;
   padding-top: 0.75rem;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .heading-primary--main:hover {
@@ -148,9 +149,10 @@ body {
 }
 
 .project__box {
-  height: 45vh;
+  height: 36vh;
   width: 30vw;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
+
   font-size: 3.8rem;
   background-color: #588da8;
   margin: 1rem 2rem;
@@ -307,12 +309,19 @@ footer {
     letter-spacing: 0.5rem;
   }
   .header {
-    height: 65vh;
-    clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+    height: 55vh;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  }
+  .project__show {
+    flex-wrap: wrap;
   }
   .project__box {
-    height: 22vh;
-    width: 20vw;
+    min-height: 40vh;
+    max-height: 42vh;
+    max-width: 42rem;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -323,21 +332,29 @@ footer {
     font-size: 36.75%;
   }
 
+  .header {
+    height: 45vh;
+    clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
+  }
+
   .skill__svg {
     height: 160px;
     width: 160px;
   }
 
   .project__box {
-    height: 18vh;
-    width: 22vw;
+    min-height: 28vh;
+    max-height: 30vh;
+
+    font-size: 6rem;
+    padding-bottom: 3rem;
   }
 }
 
 /* mm*/
 @media only screen and (max-width: 46.875em) {
   html {
-    font-size: 30.5%;
+    font-size: 31.5%;
   }
 
   .skill__svg {
@@ -347,18 +364,26 @@ footer {
   .timer {
     font-size: 2.2rem;
   }
-}
 
-@media only screen and (max-width: 42.625em) {
   .project__box {
-    height: 15vh;
-    padding-bottom: 0.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .header {
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   }
 }
+
 /* mm*/
 @media only screen and (max-width: 39.125em) {
   html {
     font-size: 24.375%;
+  }
+
+  .header {
+    height: 36vh;
+    clip-path: polygon(0 0, 100% 0, 100% 36vh, 0 100%);
   }
   .heading-primary--main {
     padding-top: 1.5rem;
@@ -375,26 +400,14 @@ footer {
   .timer {
     font-size: 2rem;
   }
-}
-
-@media only screen and (max-width: 34.725em) {
   .project__box {
-    height: 14vh;
-    padding-bottom: 0.4rem;
-  }
-}
+    font-size: 7rem;
+    padding-bottom: 0.2rem;
+    max-width: 44rem;
+    min-width: 42rem;
 
-@media only screen and (max-width: 30em) {
-  .project__show {
-    flex-direction: column;
-  }
-  .project__box {
-    min-height: 21vh;
+    min-height: 22vh;
     max-height: 25vh;
-    width: 33vw;
-    min-width: 28vw;
-    margin-bottom: 10rem;
-    padding-bottom: 0.5rem;
   }
 }
 
@@ -411,6 +424,7 @@ footer {
     width: 80px;
   }
 }
+
 @media only screen and (max-width: 24.9375em) {
   .skill__svg {
     height: 120px;
@@ -419,5 +433,21 @@ footer {
 
   .skill__show {
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 23.625em) {
+  .project__box {
+    max-width: 40rem;
+    min-width: 38rem;
+    min-height: 21vh;
+    max-height: 22vh;
+  }
+}
+@media only screen and (max-width: 21.5em) {
+  .project__box {
+    max-width: 60rem;
+    min-width: 58rem;
+    padding-bottom: 1.5rem;
   }
 }
