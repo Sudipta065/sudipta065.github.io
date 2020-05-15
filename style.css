@@ -8,12 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Nav*/
-
-/* ================================= 
-  Media Queries
-==================================== */
-
 /* Header*/
 
 .header {
@@ -293,6 +287,7 @@ footer {
       rgba(39, 73, 109, 0.9)
     );
     border-radius: 5rem;
+    margin: 1rem 1rem;
   }
 
   .stroke {
@@ -311,6 +306,14 @@ footer {
   .heading-primary--sub {
     letter-spacing: 0.5rem;
   }
+  .header {
+    height: 55vh;
+    clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
+  }
+  .project__box {
+    height: 30vh;
+    width: 20vw;
+  }
 }
 
 /* mm*/
@@ -324,9 +327,10 @@ footer {
     height: 160px;
     width: 160px;
   }
+
   .project__box {
-    height: 35vh;
-    width: 20vw;
+    height: 25vh;
+    width: 22vw;
   }
 }
 
@@ -334,10 +338,6 @@ footer {
 @media only screen and (max-width: 46.875em) {
   html {
     font-size: 30.5%;
-  }
-  .header {
-    height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   }
 
   .skill__svg {
@@ -347,14 +347,11 @@ footer {
   .timer {
     font-size: 2.2rem;
   }
-  .project__box {
-    height: 30vh;
-  }
 }
 
 @media only screen and (max-width: 42.625em) {
   .project__box {
-    height: 28vh;
+    height: 24vh;
     padding-bottom: 0.4rem;
   }
 }
@@ -382,7 +379,7 @@ footer {
 
 @media only screen and (max-width: 34.725em) {
   .project__box {
-    height: 21vh;
+    height: 20vh;
     padding-bottom: 0.4rem;
   }
 }
@@ -392,17 +389,15 @@ footer {
     flex-direction: column;
   }
   .project__box {
-    height: 30vh;
+    min-height: 23vh;
+    max-height: 24vh;
     width: 38vw;
     margin-bottom: 10rem;
     padding-bottom: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 24.875em) {
-  .header {
-    height: 65vh;
-  }
+@media only screen and (max-width: 25.9375em) {
   .heading-primary--main {
     font-size: 3.7rem;
   }
@@ -411,7 +406,17 @@ footer {
   }
 
   .skill__svg {
-    height: 78px;
-    width: 78px;
+    height: 80px;
+    width: 80px;
+  }
+}
+@media only screen and (max-width: 24.9375em) {
+  .skill__svg {
+    height: 120px;
+    width: 120px;
+  }
+
+  .skill__show {
+    flex-wrap: wrap;
   }
 }
