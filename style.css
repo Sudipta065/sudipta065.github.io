@@ -371,8 +371,8 @@ footer {
     max-width: 55rem;
     min-width: 52rem;
 
-    min-height: 22vh;
-    max-height: 25vh;
+    min-height: 35vh;
+    max-height: 40vh;
   }
   .header {
     height: 40vh;
@@ -409,6 +409,8 @@ footer {
     max-width: 70rem;
     min-width: 66rem;
     padding-bottom: 1.5rem;
+    min-height: 25vh;
+    max-height: 28vh;
   }
 }
 
@@ -419,6 +421,19 @@ footer {
   .heading-primary--sub {
     font-size: 2.7rem;
   }
+
+  .skill__svg {
+    height: 80px;
+    width: 80px;
+  }
+
+  .project__box {
+    max-width: 60rem;
+    min-width: 55rem;
+  }
+}
+
+@media only screen and (max-width: 24.9375em) {
   .skill__show {
     flex-wrap: wrap;
   }
@@ -426,11 +441,4 @@ footer {
     height: 120px;
     width: 120px;
   }
-  
-  
-  .project__box {
-    max-width: 60rem;
-    min-width: 55rem;
-  }
-  
 }
