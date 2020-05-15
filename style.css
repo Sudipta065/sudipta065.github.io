@@ -151,7 +151,7 @@ body {
 .project__box {
   height: 36vh;
   width: 30vw;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
 
   font-size: 3.8rem;
   background-color: #588da8;
@@ -161,7 +161,7 @@ body {
 }
 .project--photo-con {
   width: 100%;
-  height: 60%;
+  height: 70%;
   border-top-left-radius: 2rem;
   overflow: hidden;
 }
@@ -174,7 +174,7 @@ body {
 
 .figure__text {
   display: block;
-  padding: 1rem 2rem;
+  padding: 0 0;
   color: #f5fcc1;
 }
 
@@ -187,6 +187,7 @@ body {
   color: #f5fcc1;
   background-color: #035aa6;
   transition: all 0.2s ease-out;
+  margin-bottom: 4rem;
 }
 
 .figure__link:hover {
@@ -343,10 +344,9 @@ footer {
   }
 
   .project__box {
-    min-height: 28vh;
-    max-height: 30vh;
+    min-height: 32vh;
+    max-height: 35vh;
 
-    font-size: 6rem;
     padding-bottom: 3rem;
   }
 }
@@ -366,13 +366,11 @@ footer {
   }
 
   .project__box {
-    font-size: 6rem;
-    padding-bottom: 2rem;
     max-width: 55rem;
     min-width: 52rem;
 
-    min-height: 35vh;
-    max-height: 40vh;
+    min-height: 30vh;
+    max-height: 35vh;
   }
   .header {
     height: 40vh;
@@ -406,11 +404,11 @@ footer {
     font-size: 2rem;
   }
   .project__box {
+    font-size: 8rem;
     max-width: 70rem;
     min-width: 66rem;
-    padding-bottom: 1.5rem;
-    min-height: 25vh;
-    max-height: 28vh;
+    min-height: 31vh;
+    max-height: 33vh;
   }
 }
 
@@ -434,11 +432,12 @@ footer {
 }
 
 @media only screen and (max-width: 24.9375em) {
-  .skill__show {
-    flex-wrap: wrap;
-  }
   .skill__svg {
     height: 120px;
     width: 120px;
+  }
+
+  .skill__show {
+    flex-wrap: wrap;
   }
 }
