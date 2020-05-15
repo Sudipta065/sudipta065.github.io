@@ -316,12 +316,12 @@ footer {
     flex-wrap: wrap;
   }
   .project__box {
-    min-height: 40vh;
-    max-height: 42vh;
-    max-width: 42rem;
-    font-size: 5rem;
+    min-height: 45vh;
+    max-height: 50vh;
+    max-width: 40rem;
+    font-size: 6rem;
     margin-bottom: 5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -366,9 +366,14 @@ footer {
   }
 
   .project__box {
+    font-size: 6rem;
     padding-bottom: 2rem;
-  }
+    max-width: 55rem;
+    min-width: 52rem;
 
+    min-height: 22vh;
+    max-height: 25vh;
+  }
   .header {
     height: 40vh;
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
@@ -401,13 +406,9 @@ footer {
     font-size: 2rem;
   }
   .project__box {
-    font-size: 7rem;
-    padding-bottom: 0.2rem;
-    max-width: 44rem;
-    min-width: 42rem;
-
-    min-height: 22vh;
-    max-height: 25vh;
+    max-width: 70rem;
+    min-width: 66rem;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -433,21 +434,5 @@ footer {
 
   .skill__show {
     flex-wrap: wrap;
-  }
-}
-
-@media only screen and (max-width: 23.625em) {
-  .project__box {
-    max-width: 40rem;
-    min-width: 38rem;
-    min-height: 21vh;
-    max-height: 22vh;
-  }
-}
-@media only screen and (max-width: 21.5em) {
-  .project__box {
-    max-width: 60rem;
-    min-width: 58rem;
-    padding-bottom: 1.5rem;
   }
 }
