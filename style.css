@@ -108,7 +108,11 @@ body {
 }
 
 .skill__svg {
-  font-size: 4rem;
+  height: 30rem;
+  width: 30rem;
+  font-size: 0.1rem;
+  padding: 1rem;
+  margin: 0.5rem;
 }
 
 .heading-secondary {
@@ -149,11 +153,13 @@ body {
 }
 
 .project__box {
-  height: 36vh;
-  width: 30vw;
-  padding-bottom: 2rem;
+  height: 28rem;
+  width: 36rem;
 
-  font-size: 3.8rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
   background-color: #588da8;
   margin: 1rem 2rem;
   border-top-left-radius: 2rem;
@@ -174,7 +180,6 @@ body {
 
 .figure__text {
   display: block;
-  padding: 0 0;
   color: #f5fcc1;
 }
 
@@ -187,7 +192,7 @@ body {
   color: #f5fcc1;
   background-color: #035aa6;
   transition: all 0.2s ease-out;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 .figure__link:hover {
@@ -281,22 +286,6 @@ footer {
 }
 
 /* mm*/
-@media only screen and (max-width: 78.125em) {
-  .skill__svg {
-    height: 220px;
-    width: 220px;
-    background-image: linear-gradient(
-      rgba(0, 0, 0, 0.9),
-      rgba(39, 73, 109, 0.9)
-    );
-    border-radius: 5rem;
-    margin: 1rem 1rem;
-  }
-
-  .stroke {
-    opacity: 0;
-  }
-}
 
 @media only screen and (max-width: 75em) {
   html {
@@ -313,21 +302,26 @@ footer {
     height: 55vh;
     clip-path: polygon(0 0, 100% 0, 100% 55vh, 0 100%);
   }
+
   .project__show {
     flex-wrap: wrap;
   }
   .project__box {
-    min-height: 45vh;
-    max-height: 50vh;
-    max-width: 40rem;
+    height: 43rem;
+    min-width: 38rem;
     font-size: 6rem;
     margin-bottom: 5rem;
-    padding-bottom: 3rem;
   }
 }
 
 /* mm*/
 
+@media only screen and (max-width: 62.5em) {
+  .skill__svg {
+    height: 26rem;
+    width: 26rem;
+  }
+}
 @media only screen and (max-width: 57.75em) {
   html {
     font-size: 36.75%;
@@ -337,18 +331,6 @@ footer {
     height: 45vh;
     clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
   }
-
-  .skill__svg {
-    height: 160px;
-    width: 160px;
-  }
-
-  .project__box {
-    min-height: 32vh;
-    max-height: 35vh;
-
-    padding-bottom: 3rem;
-  }
 }
 
 /* mm*/
@@ -357,24 +339,19 @@ footer {
     font-size: 31.5%;
   }
 
-  .skill__svg {
-    height: 130px;
-    width: 130px;
-  }
   .timer {
     font-size: 2.2rem;
   }
 
-  .project__box {
-    max-width: 55rem;
-    min-width: 52rem;
-
-    min-height: 30vh;
-    max-height: 35vh;
-  }
   .header {
     height: 40vh;
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+  }
+
+  .project__box {
+    font-size: 8rem;
+    height: 45rem;
+    min-width: 49rem;
   }
 }
 
@@ -396,19 +373,36 @@ footer {
 
     letter-spacing: 0.3rem;
   }
-  .skill__svg {
-    height: 95px;
-    width: 95px;
-  }
+
   .timer {
     font-size: 2rem;
   }
+
   .project__box {
-    font-size: 8rem;
-    max-width: 70rem;
-    min-width: 66rem;
-    min-height: 31vh;
-    max-height: 33vh;
+    font-size: 11rem;
+    height: 62rem;
+    min-width: 65rem;
+  }
+
+  .skill__svg {
+    height: 28rem;
+    width: 28rem;
+  }
+}
+@media only screen and (max-width: 32.25em) {
+  .skill__show {
+    flex-wrap: wrap;
+  }
+  .skill__svg {
+    height: 40rem;
+    width: 40rem;
+  }
+
+  .hvr-outline-out {
+    margin-top: 2rem;
+  }
+  .skill__main {
+    clip-path: polygon(0 0, 100% 0, 100% 150vh, 0 100%);
   }
 }
 
@@ -418,26 +412,5 @@ footer {
   }
   .heading-primary--sub {
     font-size: 2.7rem;
-  }
-
-  .skill__svg {
-    height: 80px;
-    width: 80px;
-  }
-
-  .project__box {
-    max-width: 60rem;
-    min-width: 55rem;
-  }
-}
-
-@media only screen and (max-width: 24.9375em) {
-  .skill__svg {
-    height: 120px;
-    width: 120px;
-  }
-
-  .skill__show {
-    flex-wrap: wrap;
   }
 }
