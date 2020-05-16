@@ -394,12 +394,13 @@ footer {
     flex-wrap: wrap;
   }
   .skill__svg {
-    height: 40rem;
-    width: 40rem;
+    height: 22rem;
+    width: 22rem;
+    margin: 6.5rem;
   }
 
   .hvr-outline-out {
-    margin-top: 2rem;
+    margin: 3rem;
   }
   .skill__main {
     clip-path: polygon(0 0, 100% 0, 100% 150vh, 0 100%);
